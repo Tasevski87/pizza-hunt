@@ -12,7 +12,7 @@ const pizzaController = {
         .select('-__v')
         .sort({ _ide: -1})
             .then(dbPizzaData => res.json(dbPizzaData))
-            .catch(err => {
+            .catch(err => {o
                 console.log(err);
                 res.status(400).json(err);
             });
